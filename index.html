@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="assets/css/lightbox.css" rel="stylesheet" />
 	</head>
 	<body class="is-preload">
 
@@ -28,7 +29,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Kelvin's Portfolio</a>
+						<a href="index.html" class="logo">Kelvin Au</a>
 					</header>
 
 				<!-- Nav -->
@@ -61,10 +62,26 @@
 							<section class="posts">
 								<article>
 									<header>
-										<h2><a href="#">Project 1<br />
-											Abelian and realistic sandpiles</a></h2>
+										<h2><a href="https://github.com/thekelvinau/Project-Sandpile">Abelian and realistic sandpiles</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/sandpile_grid.png" alt="" /></a>
+									<!-- <a href="#" class="image fit" ><img src="images/sandpile_grid.png" alt="" /></a> -->
+									<!-- <a href="images/sandpile_grid.png" data-lightbox="image-1" data-title="My caption">Image #1</a> -->
+									<a href="images/sandpile.gif" class="image fit" data-lightbox="sandpile"
+									data-title="Abelian sandpile with avalanche size spectrum. The colour bar indicates the number of sand
+									grains in a particular cell. The grid is 21x21. Sand grains are poured one at a time into the centre cell
+									and spill to adjacent cells, never exceeding four grains. Grains fall off the edge of the grid. The
+									avalanche size spectrum and the step number count are accumulated after the corners of the grid are populated
+									at least one sand grain. The figure is sped up for presentation.">
+										<img src="images/sandpile_grid.png" alt="" /></a>
+									<a href="images/real_sandpile.gif" class="image fit" data-lightbox="sandpile"
+									data-title="Realistic sandpile. The grid is 31x31. In contrast with the Abelian sandpile, the cells in the
+									realistic sandpile spill over to adjacent cells when a threshold difference in the number of grains with 
+									adjacent cells is reached. A difference of five grains was used in this figure. The sandpile does not reach
+									the corners of the grid as sand grains fall off the edge of the grid. Thus, no avalanche spectrum is shown.
+									Notice that the realistic sandpile is more conically shaped than the Abelian sandpile, and the avalanches
+									that cascade through the sandpile. The colour bar indicates the number of grains in each cell. The figure
+									is sped up and some frames are removed for presentation.">
+									</a>
 									<p>Sand pours into the centre of the grid and spills over to adjacent cells when
 										a maximum threshold is reached in an Abelian sandpile. The spectra of sand 
 										avalanche sizes are visualized. A realistic sandpile spills into adjacent
@@ -72,16 +89,17 @@
 										is reached, which forms a more conical sandpile compared to the Abelian
 										sandpile. </p>
 									<ul class="actions special">
-										<li><a href="#" class="button">View Code</a></li>
+										<!-- <li><a href="#" class="button">View Code</a></li> -->
+										<li><a href="images/sandpile_code.gif" data-lightbox="sandpile_code"
+											data-title="Sandpile code. Also available on my github." class="button">View Code</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<h2><a href="#">Project 2<br />
-											Description Here.</a></h2>
+										<h2><a href="#">Coming soon</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Insert text here.</p>
+									<p>Coming Soon.</p>
 									<ul class="actions special">
 										<li><a href="#" class="button">View Code</a></li>
 									</ul>
@@ -134,6 +152,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/lightbox.js"></script>
 	</body>
 </html>
